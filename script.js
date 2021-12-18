@@ -33,7 +33,7 @@ if(choice1 === "paper") {
             return "scissors wins";
     }
 }
-// rock beats scissors so return rocks wins, if paper is chosen paper beats scissors so scissors wins
+// rock beats scissors so return rocks wins, if paper is chosen scissors beats paper so scissors wins
 if(choice1 === "scissors") {
     if(choice2 === "rock") {
         return "rock wins";
