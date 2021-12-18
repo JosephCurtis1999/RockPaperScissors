@@ -14,37 +14,40 @@ if (computerChoice < 0.34) {
 // If choice 1 is strictly equal to choice 2 the result is a tie
 var compare = function(choice1, choice2) {
     if(choice1 === choice2) {
-    return "The result is a tie!";
+    console.log("The result is a tie!");
 }
 // rock beats scissors so return rock wins, if paper is chosen paper beats rock
 if(choice1 === "rock") {
     if(choice2 === "scissors") {
-        return "rock wins";
+        console.log("rock wins");
     } else {
-        return "paper wins";
+        console.log("paper wins");
     }
 }
 // paper beats rock so return paper wins, if scissors is chosen scissors beats paper
 if(choice1 === "paper") {
     if(choice2 === "rock") {
-        return "paper wins";
+        console.log("paper wins");
     } else {
         if(choice2 === "scissors") {
-            return "scissors wins";
+            console.log("scissors wins");
     }
 }
 // rock beats scissors so return rocks wins, if paper is chosen scissors beats paper so scissors wins
 if(choice1 === "scissors") {
     if(choice2 === "rock") {
-        return "rock wins";
+        console.log("rock wins");
     } else {
         if(choice2 === "paper") {
-            return "scissors wins";
+            console.log("scissors wins");
         }
     }
 }
 }
 };
+// logs outcome the user has chosen in the game
 console.log("User Choice: " + userChoice);
+// logs outcome that the computer has chosen in the game
 console.log("Computer Choice: " + computerChoice);
+// compares the results of the user and the computer
 compare(userChoice, computerChoice);
