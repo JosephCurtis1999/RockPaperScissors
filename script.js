@@ -1,7 +1,3 @@
-var RPS = {
-    Rock: "R",
-    Paper: "P",
-    Scissors: "S",
-}
+var choices = ["rock", "paper", "scissors"];
 
-console.log(RPS);
+console.log(choices)
