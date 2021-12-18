@@ -1,6 +1,9 @@
 // Brings up an alert to the user to ask what they choose
 var userChoice = prompt("Do you choose rock, paper or scissors?");
-var computerChoice = Math.random();
+var computerChoice = Math.random()
+
+
+
 
 // Randomises computer choice between rock, paper and scissors (makes it even due to values chosen, so if played 100 times we should get even outcomes)
 if (computerChoice < 0.34) {
@@ -14,7 +17,7 @@ if (computerChoice < 0.34) {
 // If choice 1 is strictly equal to choice 2 the result is a tie
 var compare = function(choice1, choice2) {
     if(choice1 === choice2) {
-    console.log("The result is a tie!");
+    console.log("The result is a tie");
 }
 // rock beats scissors so return rock wins, if paper is chosen paper beats rock
 if(choice1 === "rock") {
